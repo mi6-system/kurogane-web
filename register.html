@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register — Kurogane</title>
+  <meta name="description" content="Kurogane account stub. Live game database comes later.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Manrope:wght@400;500;600&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/mark.svg" alt="">
+        <span>
+          <span class="brand-name">Kurogane</span>
+          <span class="brand-kana" data-i18n="brand_kana">黒鉄</span>
+        </span>
+      </a>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
+          <li><a href="download.html" data-i18n="nav_download">Скачать</a></li>
+          <li><a href="register.html" aria-current="page" data-i18n="nav_register">Регистрация</a></li>
+          <li><a href="rules.html" data-i18n="nav_rules">Правила</a></li>
+          <li><a href="about.html" data-i18n="nav_about">О проекте</a></li>
+          <li><a href="es.html" data-i18n="nav_es">ES</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang-btn="ru" aria-pressed="true">RU</button>
+          <button type="button" data-lang-btn="en">EN</button>
+          <a href="es.html">ES</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <header class="page-head">
+      <p class="kicker" data-i18n="rg_kicker">Аккаунт</p>
+      <h1 data-i18n="rg_title">Регистрация</h1>
+      <p class="lead" data-i18n="rg_lead">Форма v1 — заглушка. Живая запись в базу игры подключится отдельно, другим контуром. Сейчас заявка никуда не уходит.</p>
+    </header>
+
+    <form class="stack" id="register-form" autocomplete="off">
+      <label>
+        <span data-i18n="rg_login">Логин</span>
+        <input type="text" name="login" required minlength="4" maxlength="16" pattern="[A-Za-z0-9_]+">
+      </label>
+      <label>
+        <span data-i18n="rg_email">Email</span>
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        <span data-i18n="rg_pass">Пароль</span>
+        <input type="password" name="password" required minlength="6" maxlength="32">
+      </label>
+      <label>
+        <span data-i18n="rg_lang">Язык</span>
+        <select name="lang">
+          <option value="ru" data-i18n="rg_lang_ru">Русский</option>
+          <option value="en" data-i18n="rg_lang_en">English</option>
+        </select>
+      </label>
+      <p class="notice" data-i18n="rg_note">Не вводи сюда пароль от боевого аккаунта другого сервера. Это тестовая витрина.</p>
+      <button class="btn" type="submit" data-i18n="rg_submit">Отправить заявку</button>
+    </form>
+
+    <div class="card" id="register-done" hidden>
+      <p data-i18n="rg_ok">Принято локально. База игры пока не подключена — заявка не создала персонажа и не записала аккаунт.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div>
+        <div class="footer-brand">KUROGANE · 黒鉄</div>
+        <p data-i18n="foot_note">Kurogane — неофициальный фанатский тест. Не связан с правообладателем Lineage 2.</p>
+      </div>
+      <p>kurogane.world</p>
+    </div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
