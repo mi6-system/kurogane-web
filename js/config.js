@@ -11,7 +11,7 @@ window.KUROGANE = {
     note: "costumes / style factions"
   },
   contacts: {
-    discord: "https://discord.gg/ycpzuFU3E",
+    discord: "https://discord.gg/WPMZJR2Ktg",
     telegram: "https://t.me/kurogane_world"
   }
 };
