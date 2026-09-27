@@ -12,6 +12,6 @@ window.KUROGANE = {
   },
   contacts: {
     discord: "",
-    telegram: ""
+    telegram: "https://t.me/kurogane_world"
   }
 };
