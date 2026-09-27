@@ -1,10 +1,9 @@
-/* Manual v1 config. Edit this file on the host — no game query. */
 window.KUROGANE = {
-  status: "checking", // "online" | "offline" | "checking"
+  status: "checking",
   patch: {
     version: "0.1",
-    ready: false,
-    file: "", // e.g. "files/kurogane-patch-0.1.zip" when ready
+    ready: true,
+    file: "https://drive.google.com/uc?export=download&id=1Ww1x7ThGwncLgrfeKeg7kOBi2DcAYjZT",
     note: "client ini + splash"
   },
   nextPatch: {
