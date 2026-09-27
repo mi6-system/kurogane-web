@@ -3,7 +3,7 @@ window.KUROGANE = {
   patch: {
     version: "0.1",
     ready: true,
-    file: "https://drive.google.com/uc?export=download&id=1Ww1x7ThGwncLgrfeKeg7kOBi2DcAYjZT",
+    file: "https://drive.google.com/file/d/1fbboSPbEmgcgxc6WM33-wePcjz1CtKR6/view?usp=sharing",
     note: "client ini + splash"
   },
   nextPatch: {
