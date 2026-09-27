@@ -181,8 +181,13 @@ button, input, select {
 }
 
 .hero {
-  padding: 72px 0 28px;
+  position: relative;
+  padding: 96px 0 56px;
   text-align: center;
+  background:
+    linear-gradient(180deg, rgba(11,11,13,0.35) 0%, rgba(11,11,13,0.72) 55%, rgba(11,11,13,0.96) 100%),
+    url("../assets/hero.jpg") center 35% / cover no-repeat;
+  border-bottom: 1px solid var(--line-weak);
 }
 .kicker {
   color: var(--accent);
