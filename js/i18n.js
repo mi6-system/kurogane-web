@@ -20,7 +20,7 @@
       en: "Status is set by hand. Live world query is not wired in v1."
     },
 
-    hero_kicker: { ru: "Lineage 2 · Interlude · x800", en: "Lineage 2 · Interlude · x800" },
+    hero_kicker: { ru: "Lineage 2 · Interlude · x32.2", en: "Lineage 2 · Interlude · x32.2" },
     hero_lead: {
       ru: "Приватный тестовый сервер. Чистая хроника, жёсткий кап заточки, костюмы как стиль — без статов. Двери открыты: это тест с друзьями, а не витрина «официального» гранд-сервера.",
       en: "A private test realm. Clean chronicle, hard enchant cap, costumes as style — no stats. The door is open: a test with friends, not a fake official grand server."
@@ -31,8 +31,8 @@
 
     for_whom_title: { ru: "Для кого", en: "Who it is for" },
     for_whom_text: {
-      ru: "Для тех, кто хочет спокойно проверить Interlude x800 без гонки доната и без GM-персонажей у игроков. Пришёл, поставил патч, поиграл, написал, что сломалось.",
-      en: "For people who want to try Interlude x800 without a donate arms race and without player GM characters. Install the patch, play, tell us what broke."
+      ru: "Для тех, кто хочет спокойно проверить Interlude x32.2 без гонки доната и без GM-персонажей у игроков. Пришёл, поставил патч, поиграл, написал, что сломалось.",
+      en: "For people who want to try Interlude x32.2 without a donate arms race and without player GM characters. Install the patch, play, tell us what broke."
     },
 
     steps_title: { ru: "Как начать", en: "How to start" },
@@ -54,7 +54,7 @@
 
     facts_title: { ru: "Коротко о мире", en: "The realm in brief" },
     fact_rates: { ru: "Рейты", en: "Rates" },
-    fact_rates_v: { ru: "x800", en: "x800" },
+    fact_rates_v: { ru: "x32.2", en: "x32.2" },
     fact_chronicle: { ru: "Хроника", en: "Chronicle" },
     fact_chronicle_v: { ru: "чистый Interlude", en: "clean Interlude" },
     fact_cap: { ru: "Кап заточки", en: "Enchant cap" },
