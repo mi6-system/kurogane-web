@@ -21,20 +21,20 @@
       ru: "Приватный тестовый сервер. Чистая хроника, жёсткий кап заточки, костюмы как стиль — без статов. Двери открыты: это тест с друзьями, а не витрина «официального» гранд-сервера.",
       en: "A private test realm. Clean chronicle, hard enchant cap, costumes as style — no stats. The door is open: a test with friends, not a showcase for an “official” grand server."
     },
-    cta_download: { ru: "Скачать патч", en: "Get the patch" },
+    cta_download: { ru: "Скачать фулл клиент", en: "Get the full client" },
     cta_register: { ru: "Регистрация", en: "Create account" },
 
     for_whom_title: { ru: "Для кого", en: "Who it is for" },
     for_whom_text: {
-      ru: "Для тех, кто хочет спокойно проверить Interlude x32.2 без гонки доната и без GM-персонажей у игроков. Пришёл, поставил патч, поиграл, написал, что сломалось.",
-      en: "For people who want to try Interlude x32.2 without a donate arms race and without player GM characters. Install the patch, play, tell us what broke."
+      ru: "Для тех, кто хочет спокойно проверить Interlude x32.2 без гонки доната и без GM-персонажей у игроков. Пришёл, скачал клиент, поиграл, написал, что сломалось.",
+      en: "For people who want to try Interlude x32.2 without a donate arms race and without player GM characters. Download the client, play, tell us what broke."
     },
 
     steps_title: { ru: "Как начать", en: "How to start" },
-    step1_t: { ru: "Патч", en: "Patch" },
+    step1_t: { ru: "Фулл клиент", en: "Full client" },
     step1_d: {
-      ru: "Скачай клиентский патч, когда номер версии на сайте станет новее твоего.",
-      en: "Download the client patch when the version on this site is newer than yours."
+      ru: "Скачай фулл клиент по ссылке на странице загрузки.",
+      en: "Download the full client from the link on the download page."
     },
     step2_t: { ru: "Запуск", en: "Launch" },
     step2_d: {
@@ -96,27 +96,9 @@
     },
 
     dl_kicker: { ru: "Клиент", en: "Client" },
-    dl_title: { ru: "Патч", en: "Patch" },
-    dl_lead: {
-      ru: "Качай только если номер на этой странице новее того, что уже стоит у тебя.",
-      en: "Download only if the number on this page is newer than what you already have."
-    },
-    dl_current: { ru: "Текущая выкладка", en: "Current drop" },
-    dl_v01: { ru: "0.1 — только клиентский ini + сплэш", en: "0.1 — client ini + splash only" },
-    dl_v01_state: { ru: "ещё не готов", en: "not ready yet" },
-    dl_btn_soon: { ru: "Patch 0.1 — скоро", en: "Patch 0.1 — soon" },
-    dl_btn_get: { ru: "Скачать патч", en: "Download patch" },
-    dl_state_ready: { ru: "доступен для скачивания", en: "available to download" },
-    dl_install_title: { ru: "Установка", en: "Installation" },
-    dl_i1: { ru: "Скачай архив по кнопке.", en: "Download the archive with the button." },
-    dl_i2: { ru: "Распакуй файлы в папку клиента Interlude с заменой.", en: "Unpack the files into your Interlude client folder, replacing existing ones." },
-    dl_i3: { ru: "Запусти клиент как обычно.", en: "Start the client as usual." },
-    dl_roadmap: { ru: "План патчей", en: "Patch plan" },
-    dl_v02: { ru: "0.2 — костюмы (фракции стиля)", en: "0.2 — costumes (style factions)" },
-    dl_warn: {
-      ru: "Патч только для этого теста. Чужие сборки и «универсальные» лаунчеры сюда не подходят.",
-      en: "This patch is for this test only. Third-party packs and generic launchers do not belong here."
-    },
+    dl_title: { ru: "Фулл клиент", en: "Full client" },
+    dl_btn_soon: { ru: "Фулл клиент — скоро", en: "Full client — soon" },
+    dl_btn_get: { ru: "Скачать фулл клиент", en: "Download full client" },
 
     rg_kicker: { ru: "Аккаунт", en: "Account" },
     rg_title: { ru: "Регистрация", en: "Register" },
@@ -132,7 +114,7 @@
     nf_lead: { ru: "Такой страницы здесь нет. Вернись на главную.", en: "There is no such page here. Go back to the home page." },
 
     t_home: { ru: "Kurogane — Lineage 2 Interlude x32.2", en: "Kurogane — Lineage 2 Interlude x32.2" },
-    t_download: { ru: "Скачать патч — Kurogane", en: "Download the patch — Kurogane" },
+    t_download: { ru: "Фулл клиент — Kurogane", en: "Full client — Kurogane" },
     t_register: { ru: "Регистрация — Kurogane", en: "Register — Kurogane" },
     t_rules: { ru: "Правила — Kurogane", en: "Rules — Kurogane" },
     t_about: { ru: "О проекте — Kurogane", en: "About — Kurogane" },
@@ -142,8 +124,8 @@
       en: "Kurogane — an unofficial fan test of Lineage 2 Interlude. Clean chronicle, x32.2 rates, +15 / +17 enchant cap, costumes without stats."
     },
     d_download: {
-      ru: "Клиентский патч для теста Kurogane (Lineage 2 Interlude): версия, установка и план обновлений.",
-      en: "Client patch for the Kurogane test (Lineage 2 Interlude): version, installation and update plan."
+      ru: "Фулл клиент для теста Kurogane (Lineage 2 Interlude): ссылка на скачивание.",
+      en: "Full client for the Kurogane test (Lineage 2 Interlude): download link."
     },
     d_register: {
       ru: "Как попасть на тест Kurogane: регистрация откроется вместе с запуском мира, анонсы — в Discord и Telegram.",
@@ -207,8 +189,8 @@
       en: "Kurogane is a private fan test of Lineage 2 Interlude. It exists to try a clean chronicle, high rates, and a hard cap with a small circle — then open the door to people who want that pace."
     },
     ab_p2: {
-      ru: "Сайт и игровой мир — отдельные системы. Здесь — информация, патч и правила; игра работает на собственной инфраструктуре.",
-      en: "The site and the game world are separate systems. Here you get information, the patch and the rules; the game runs on its own infrastructure."
+      ru: "Сайт и игровой мир — отдельные системы. Здесь — информация, клиент и правила; игра работает на собственной инфраструктуре.",
+      en: "The site and the game world are separate systems. Here you get information, the client and the rules; the game runs on its own infrastructure."
     },
     ab_p3: {
       ru: "Мы не правообладатель Lineage 2 и не делаем вид, что тест «согласован с издателем». Это любительская площадка. Если правообладатель попросит закрыть — закроем.",

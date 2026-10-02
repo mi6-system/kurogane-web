@@ -24,21 +24,14 @@
   function applyPatch() {
     var patch = (window.KUROGANE && window.KUROGANE.patch) || {};
     var btn = $("[data-patch-button]");
-    var ver = patch.version || "0.1";
-    $all("[data-patch-version]").forEach(function (el) { el.textContent = ver; });
     if (!btn) return;
-    var state = $("[data-patch-state]");
     if (patch.ready && patch.file) {
       btn.removeAttribute("aria-disabled");
       btn.classList.remove("is-disabled");
       btn.setAttribute("href", patch.file);
       btn.setAttribute("target", "_blank");
       btn.setAttribute("data-i18n", "dl_btn_get");
-      btn.textContent = t("dl_btn_get", "Скачать патч") + " " + ver;
-      if (state) {
-        state.setAttribute("data-i18n", "dl_state_ready");
-        state.textContent = t("dl_state_ready", state.textContent);
-      }
+      btn.textContent = t("dl_btn_get", "Скачать фулл клиент");
     } else {
       btn.setAttribute("aria-disabled", "true");
       btn.classList.add("is-disabled");
