@@ -3,25 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About — Kurogane</title>
-  <meta name="description" content="Who Kurogane is: unofficial Interlude fan test. Black iron, open door.">
+  <title>О проекте — Kurogane</title>
+  <meta name="description" content="Что такое Kurogane: неофициальный фанатский тест Lineage 2 Interlude. Чёрное железо, открытая дверь.">
+  <meta name="theme-color" content="#09090b">
+  <link rel="canonical" href="https://kurogane.world/about.html">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kurogane">
+  <meta property="og:title" content="О проекте — Kurogane">
+  <meta property="og:description" content="Что такое Kurogane: неофициальный фанатский тест Lineage 2 Interlude. Чёрное железо, открытая дверь.">
+  <meta property="og:url" content="https://kurogane.world/about.html">
+  <meta property="og:image" content="https://kurogane.world/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Manrope:wght@400;500;600&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="about">
+  <a class="skip" href="#main" data-i18n="skip">Перейти к содержимому</a>
   <header class="site-header">
     <div class="wrap header-row">
       <a class="brand" href="index.html">
-        <img class="brand-mark" src="assets/mark.svg" alt="">
+        <img class="brand-mark" src="assets/mark.svg" alt="" width="28" height="28">
         <span>
           <span class="brand-name">Kurogane</span>
-          <span class="brand-kana" data-i18n="brand_kana">黒鉄</span>
+          <span class="brand-kana">黒鉄</span>
         </span>
       </a>
-      <nav class="site-nav" id="site-nav">
+      <nav class="site-nav" id="site-nav" aria-label="Section">
         <ul>
           <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
           <li><a href="download.html" data-i18n="nav_download">Скачать</a></li>
@@ -37,22 +51,20 @@
           <button type="button" data-lang-btn="en">EN</button>
           <a href="es.html">ES</a>
         </div>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu" data-i18n-aria="menu"><span></span></button>
       </div>
     </div>
   </header>
-
-  <main class="wrap">
+  <main id="main" class="wrap">
     <header class="page-head">
       <p class="kicker" data-i18n="ab_kicker">Кто</p>
       <h1>KUROGANE</h1>
-      <p class="hero-kana" style="letter-spacing:0.4em">黒鉄</p>
+      <p class="hero-kana">黒鉄</p>
       <p class="lead" data-i18n="ab_lead">Черное железо. Имя сервера — латиницей Kurogane, иероглифы 黒鉄 можно писать мелко. Это не бренд корпорации и не «партнёрская» табличка.</p>
     </header>
-
     <article class="about-copy">
       <p data-i18n="ab_p1">Kurogane — приватный фанатский тест Lineage 2 Interlude. Его собрали, чтобы проверить связку «чистая хроника + высокие рейты + жёсткий кап» на узком круге, а потом открыть дверь тем, кому такой режим близок.</p>
-      <p data-i18n="ab_p2">Сайт и игровой мир — разные контуры. Здесь витрина: тексты, патч, правила, заглушка регистрации. Игра живёт отдельно и не торчит из этой страницы.</p>
+      <p data-i18n="ab_p2">Сайт и игровой мир — отдельные системы. Здесь — информация, патч и правила; игра работает на собственной инфраструктуре.</p>
       <p data-i18n="ab_p3">Мы не правообладатель Lineage 2 и не делаем вид, что тест «согласован с издателем». Это любительская площадка. Если правообладатель попросит закрыть — закроем.</p>
       <h2 data-i18n="ab_list_title">Что это не есть</h2>
       <ul class="not-list">
@@ -63,14 +75,19 @@
       </ul>
     </article>
   </main>
-
   <footer class="site-footer">
-    <div class="wrap footer-row">
+    <div class="wrap footer-grid">
       <div>
         <div class="footer-brand">KUROGANE · 黒鉄</div>
         <p data-i18n="foot_note">Kurogane — неофициальный фанатский тест. Не связан с правообладателем Lineage 2.</p>
+        <p class="footer-small" data-i18n="foot_rights">Lineage 2 и связанные названия принадлежат их правообладателям.</p>
       </div>
-      <p>kurogane.world</p>
+      <nav class="footer-nav" aria-label="Footer"><a href="index.html" data-i18n="nav_home">Главная</a><a href="download.html" data-i18n="nav_download">Скачать</a><a href="register.html" data-i18n="nav_register">Регистрация</a><a href="rules.html" data-i18n="nav_rules">Правила</a><a href="about.html" data-i18n="nav_about">О проекте</a></nav>
+      <div class="footer-social">
+        <a data-footer-contact="discord" href="#" target="_blank" rel="noopener noreferrer" hidden>Discord</a>
+        <a data-footer-contact="telegram" href="#" target="_blank" rel="noopener noreferrer" hidden>Telegram</a>
+        <span class="footer-small">kurogane.world</span>
+      </div>
     </div>
   </footer>
   <script src="js/config.js"></script>

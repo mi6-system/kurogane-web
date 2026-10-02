@@ -3,25 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Download — Kurogane</title>
-  <meta name="description" content="Kurogane patch 0.1. Download only if the version number is newer.">
+  <title>Скачать патч — Kurogane</title>
+  <meta name="description" content="Клиентский патч для теста Kurogane (Lineage 2 Interlude): версия, установка и план обновлений.">
+  <meta name="theme-color" content="#09090b">
+  <link rel="canonical" href="https://kurogane.world/download.html">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kurogane">
+  <meta property="og:title" content="Скачать патч — Kurogane">
+  <meta property="og:description" content="Клиентский патч для теста Kurogane (Lineage 2 Interlude): версия, установка и план обновлений.">
+  <meta property="og:url" content="https://kurogane.world/download.html">
+  <meta property="og:image" content="https://kurogane.world/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Manrope:wght@400;500;600&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="download">
+  <a class="skip" href="#main" data-i18n="skip">Перейти к содержимому</a>
   <header class="site-header">
     <div class="wrap header-row">
       <a class="brand" href="index.html">
-        <img class="brand-mark" src="assets/mark.svg" alt="">
+        <img class="brand-mark" src="assets/mark.svg" alt="" width="28" height="28">
         <span>
           <span class="brand-name">Kurogane</span>
-          <span class="brand-kana" data-i18n="brand_kana">黒鉄</span>
+          <span class="brand-kana">黒鉄</span>
         </span>
       </a>
-      <nav class="site-nav" id="site-nav">
+      <nav class="site-nav" id="site-nav" aria-label="Section">
         <ul>
           <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
           <li><a href="download.html" aria-current="page" data-i18n="nav_download">Скачать</a></li>
@@ -37,12 +51,11 @@
           <button type="button" data-lang-btn="en">EN</button>
           <a href="es.html">ES</a>
         </div>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu" data-i18n-aria="menu"><span></span></button>
       </div>
     </div>
   </header>
-
-  <main class="wrap">
+  <main id="main" class="wrap">
     <header class="page-head">
       <p class="kicker" data-i18n="dl_kicker">Клиент</p>
       <h1 data-i18n="dl_title">Патч</h1>
@@ -50,18 +63,22 @@
     </header>
 
     <div class="patch-hero">
-      <article class="card">
+      <article class="card patch-card">
         <p class="fact-k" data-i18n="dl_current">Текущая выкладка</p>
         <p class="version-num">v<span data-patch-version>0.1</span></p>
         <p data-i18n="dl_v01">0.1 — только клиентский ini + сплэш</p>
-        <p class="muted" style="margin-top:8px" data-i18n="dl_v01_state">ещё не готов</p>
-        <p style="margin-top:18px">
-          <a class="btn is-disabled" data-patch-button href="#patch-slot" aria-disabled="true" data-i18n="dl_btn_soon">Patch 0.1 — скоро</a>
+        <p class="muted state" data-patch-state data-i18n="dl_v01_state">ещё не готов</p>
+        <p class="patch-action">
+          <a class="btn is-disabled" data-patch-button href="#" aria-disabled="true" rel="noopener noreferrer" data-i18n="dl_btn_soon">Patch 0.1 — скоро</a>
         </p>
       </article>
-      <article class="card slot" id="patch-slot">
-        <p class="fact-k">ZIP</p>
-        <p class="muted" data-i18n="dl_slot">Слот под zip: когда файл появится, кнопка начнёт его отдавать. Положи архив в /files и пропиши путь в js/config.js.</p>
+      <article class="card">
+        <p class="fact-k" data-i18n="dl_install_title">Установка</p>
+        <ol class="install">
+          <li data-i18n="dl_i1">Скачай архив по кнопке.</li>
+          <li data-i18n="dl_i2">Распакуй файлы в папку клиента Interlude с заменой.</li>
+          <li data-i18n="dl_i3">Запусти клиент как обычно.</li>
+        </ol>
       </article>
     </div>
 
@@ -77,17 +94,22 @@
           <p data-i18n="dl_v02">0.2 — костюмы (фракции стиля)</p>
         </article>
       </div>
-      <p class="notice" style="margin-top:16px" data-i18n="dl_warn">Патч только для этого теста. Чужие сборки и «универсальные» лаунчеры сюда не подходят.</p>
+      <p class="notice gap-top" data-i18n="dl_warn">Патч только для этого теста. Чужие сборки и «универсальные» лаунчеры сюда не подходят.</p>
     </section>
   </main>
-
   <footer class="site-footer">
-    <div class="wrap footer-row">
+    <div class="wrap footer-grid">
       <div>
         <div class="footer-brand">KUROGANE · 黒鉄</div>
         <p data-i18n="foot_note">Kurogane — неофициальный фанатский тест. Не связан с правообладателем Lineage 2.</p>
+        <p class="footer-small" data-i18n="foot_rights">Lineage 2 и связанные названия принадлежат их правообладателям.</p>
       </div>
-      <p>kurogane.world</p>
+      <nav class="footer-nav" aria-label="Footer"><a href="index.html" data-i18n="nav_home">Главная</a><a href="download.html" data-i18n="nav_download">Скачать</a><a href="register.html" data-i18n="nav_register">Регистрация</a><a href="rules.html" data-i18n="nav_rules">Правила</a><a href="about.html" data-i18n="nav_about">О проекте</a></nav>
+      <div class="footer-social">
+        <a data-footer-contact="discord" href="#" target="_blank" rel="noopener noreferrer" hidden>Discord</a>
+        <a data-footer-contact="telegram" href="#" target="_blank" rel="noopener noreferrer" hidden>Telegram</a>
+        <span class="footer-small">kurogane.world</span>
+      </div>
     </div>
   </footer>
   <script src="js/config.js"></script>

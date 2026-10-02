@@ -1,10 +1,10 @@
 window.KUROGANE = {
+  // "online" | "offline" | "checking" ("checking" hides the status pill)
   status: "checking",
   patch: {
     version: "0.1",
     ready: true,
-    file: "https://drive.google.com/file/d/1L2tbrvq9XAmc6XOA2AbUZIYuYefMupyv/view?usp=sharing",
-    note: "https://drive.google.com/file/d/1L2tbrvq9XAmc6XOA2AbUZIYuYefMupyv/view?usp=sharing"
+    file: "https://drive.google.com/file/d/1L2tbrvq9XAmc6XOA2AbUZIYuYefMupyv/view?usp=sharing"
   },
   nextPatch: {
     version: "0.2",

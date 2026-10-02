@@ -7,6 +7,8 @@
 
 ```
 index.html          /
+404.html           страница ошибки (noindex)
+sitemap.xml, robots.txt
 download.html       /download
 register.html       /register
 rules.html          /rules
@@ -16,7 +18,7 @@ css/style.css
 js/config.js        статус, версия патча, Discord / Telegram
 js/i18n.js          RU + EN
 js/main.js
-assets/mark.svg
+assets/mark.svg, hero.jpg, hero-m.jpg (мобильный), og.jpg (превью ссылок 1200x630)
 files/              слот под zip патча
 ```
 
@@ -49,17 +51,18 @@ DNS у регистратора (Spaceship): A / AAAA / CNAME на **веб-хо
 
 Файл `js/config.js`:
 
-- `status`: `"online"` | `"offline"` | `"checking"`
+- `status`: `"online"` | `"offline"` | `"checking"` (при `checking` плашка статуса скрыта)
 - `patch.ready`: `true` когда zip готов
-- `patch.file`: путь вроде `"files/kurogane-patch-0.1.zip"`
+- `patch.file`: ссылка на архив (внешний URL или путь вроде `"files/kurogane-patch-0.1.zip"`)
 - `contacts.discord` / `contacts.telegram`: полные URL, когда появятся
 
-Регистрация пишет черновик только в `localStorage` браузера. В MariaDB игры ничего не уходит.
+Страница регистрации — информационная: форма удалена, сайт не собирает логины и пароли. Когда появится бэкенд, форму можно вернуть из истории git.
 
 ## Язык
 
 Переключатель RU / EN на каждой странице, выбор в `localStorage`.  
 ES в меню ведёт на заготовку.
+Заголовок и description страницы тоже переключаются по языку (ключи `t_*` / `d_*` в `js/i18n.js`, страница определяется по `<body data-page>`).
 
 ## Позже
 

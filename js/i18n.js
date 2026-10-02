@@ -15,19 +15,14 @@
     status_online: { ru: "Online", en: "Online" },
     status_offline: { ru: "Offline", en: "Offline" },
     status_checking: { ru: "проверяется", en: "checking" },
-    status_hint: {
-      ru: "Статус выставляется вручную. Живой опрос мира в v1 не подключён.",
-      en: "Status is set by hand. Live world query is not wired in v1."
-    },
 
     hero_kicker: { ru: "Lineage 2 · Interlude · x32.2", en: "Lineage 2 · Interlude · x32.2" },
     hero_lead: {
       ru: "Приватный тестовый сервер. Чистая хроника, жёсткий кап заточки, костюмы как стиль — без статов. Двери открыты: это тест с друзьями, а не витрина «официального» гранд-сервера.",
-      en: "A private test realm. Clean chronicle, hard enchant cap, costumes as style — no stats. The door is open: a test with friends, not a fake official grand server."
+      en: "A private test realm. Clean chronicle, hard enchant cap, costumes as style — no stats. The door is open: a test with friends, not a showcase for an “official” grand server."
     },
     cta_download: { ru: "Скачать патч", en: "Get the patch" },
     cta_register: { ru: "Регистрация", en: "Create account" },
-    cta_play: { ru: "Play", en: "Play" },
 
     for_whom_title: { ru: "Для кого", en: "Who it is for" },
     for_whom_text: {
@@ -48,8 +43,8 @@
     },
     step3_t: { ru: "Игра", en: "Play" },
     step3_d: {
-      ru: "Зайди своим тестовым аккаунтом. Адрес мира на витрине нарочно не светим крупно.",
-      en: "Log in with your test account. The world address is not printed large on this site."
+      ru: "Адрес мира выдаётся отдельно — следи за анонсами в Discord и Telegram.",
+      en: "The world address is shared separately — follow announcements on Discord and Telegram."
     },
 
     facts_title: { ru: "Коротко о мире", en: "The realm in brief" },
@@ -78,22 +73,23 @@
     fac_cut: { ru: "Крой", en: "Cut" },
     fac_cut_d: { ru: "Модники: городской крой, ткань, жест.", en: "Street cut, cloth, attitude." },
 
-    play_title: { ru: "Play", en: "Play" },
-    play_hint: {
-      ru: "Поле оставлено. IP мира на главной не публикуем.",
-      en: "The field is here on purpose. The world IP is not advertised on the homepage."
-    },
-    play_placeholder: { ru: "адрес выдадут отдельно", en: "address given separately" },
 
-    contacts_title: { ru: "Контакты", en: "Contacts" },
-    contacts_empty: {
-      ru: "Ссылки появятся здесь. Поля пока пустые.",
-      en: "Links will land here. The fields are empty for now."
+    contacts_title: { ru: "Сообщество", en: "Community" },
+    contacts_lead: {
+      ru: "Анонсы, вопросы и баги — в сообществе.",
+      en: "Announcements, questions and bug reports live in the community."
     },
     contact_discord: { ru: "Discord", en: "Discord" },
     contact_telegram: { ru: "Telegram", en: "Telegram" },
     contact_soon: { ru: "скоро", en: "soon" },
+    contact_open: { ru: "Открыть →", en: "Open →" },
 
+    foot_rights: {
+      ru: "Lineage 2 и связанные названия принадлежат их правообладателям.",
+      en: "Lineage 2 and related names belong to their respective rights holders."
+    },
+    skip: { ru: "Перейти к содержимому", en: "Skip to content" },
+    menu: { ru: "Меню", en: "Menu" },
     foot_note: {
       ru: "Kurogane — неофициальный фанатский тест. Не связан с правообладателем Lineage 2.",
       en: "Kurogane is an unofficial fan test. Not affiliated with the Lineage 2 rights holder."
@@ -109,10 +105,12 @@
     dl_v01: { ru: "0.1 — только клиентский ini + сплэш", en: "0.1 — client ini + splash only" },
     dl_v01_state: { ru: "ещё не готов", en: "not ready yet" },
     dl_btn_soon: { ru: "Patch 0.1 — скоро", en: "Patch 0.1 — soon" },
-    dl_slot: {
-      ru: "Слот под zip: когда файл появится, кнопка начнёт его отдавать. Положи архив в /files и пропиши путь в js/config.js.",
-      en: "Zip slot: when the file exists, the button will serve it. Put the archive in /files and set the path in js/config.js."
-    },
+    dl_btn_get: { ru: "Скачать патч", en: "Download patch" },
+    dl_state_ready: { ru: "доступен для скачивания", en: "available to download" },
+    dl_install_title: { ru: "Установка", en: "Installation" },
+    dl_i1: { ru: "Скачай архив по кнопке.", en: "Download the archive with the button." },
+    dl_i2: { ru: "Распакуй файлы в папку клиента Interlude с заменой.", en: "Unpack the files into your Interlude client folder, replacing existing ones." },
+    dl_i3: { ru: "Запусти клиент как обычно.", en: "Start the client as usual." },
     dl_roadmap: { ru: "План патчей", en: "Patch plan" },
     dl_v02: { ru: "0.2 — костюмы (фракции стиля)", en: "0.2 — costumes (style factions)" },
     dl_warn: {
@@ -123,24 +121,43 @@
     rg_kicker: { ru: "Аккаунт", en: "Account" },
     rg_title: { ru: "Регистрация", en: "Register" },
     rg_lead: {
-      ru: "Форма v1 — заглушка. Живая запись в базу игры подключится отдельно, другим контуром. Сейчас заявка никуда не уходит.",
-      en: "The v1 form is a stub. Live writes into the game database will be wired later, on another track. Nothing is stored yet."
+      ru: "Регистрация откроется вместе с запуском мира. Анонс появится в Discord и Telegram.",
+      en: "Registration opens together with the world launch. The announcement will be posted on Discord and Telegram."
     },
-    rg_login: { ru: "Логин", en: "Login" },
-    rg_email: { ru: "Email", en: "Email" },
-    rg_pass: { ru: "Пароль", en: "Password" },
-    rg_lang: { ru: "Язык", en: "Language" },
-    rg_lang_ru: { ru: "Русский", en: "Russian" },
-    rg_lang_en: { ru: "English", en: "English" },
-    rg_submit: { ru: "Отправить заявку", en: "Submit request" },
     rg_note: {
-      ru: "Не вводи сюда пароль от боевого аккаунта другого сервера. Это тестовая витрина.",
-      en: "Do not reuse a live password from another server. This is a test storefront."
+      ru: "Сайт не принимает логины и пароли. Данные аккаунта вводятся только в игровом клиенте.",
+      en: "This site does not accept logins or passwords. Account details are entered only in the game client."
     },
-    rg_ok: {
-      ru: "Принято локально. База игры пока не подключена — заявка не создала персонажа и не записала аккаунт.",
-      en: "Saved locally in the browser only. The game database is not connected — no account was created."
+    nf_title: { ru: "Не найдено", en: "Not found" },
+    nf_lead: { ru: "Такой страницы здесь нет. Вернись на главную.", en: "There is no such page here. Go back to the home page." },
+
+    t_home: { ru: "Kurogane — Lineage 2 Interlude x32.2", en: "Kurogane — Lineage 2 Interlude x32.2" },
+    t_download: { ru: "Скачать патч — Kurogane", en: "Download the patch — Kurogane" },
+    t_register: { ru: "Регистрация — Kurogane", en: "Register — Kurogane" },
+    t_rules: { ru: "Правила — Kurogane", en: "Rules — Kurogane" },
+    t_about: { ru: "О проекте — Kurogane", en: "About — Kurogane" },
+    t_notfound: { ru: "404 — Kurogane", en: "404 — Kurogane" },
+    d_home: {
+      ru: "Kurogane — неофициальный фанатский тест Lineage 2 Interlude. Чистая хроника, рейты x32.2, кап заточки +15 / +17, костюмы без статов.",
+      en: "Kurogane — an unofficial fan test of Lineage 2 Interlude. Clean chronicle, x32.2 rates, +15 / +17 enchant cap, costumes without stats."
     },
+    d_download: {
+      ru: "Клиентский патч для теста Kurogane (Lineage 2 Interlude): версия, установка и план обновлений.",
+      en: "Client patch for the Kurogane test (Lineage 2 Interlude): version, installation and update plan."
+    },
+    d_register: {
+      ru: "Как попасть на тест Kurogane: регистрация откроется вместе с запуском мира, анонсы — в Discord и Telegram.",
+      en: "How to join the Kurogane test: registration opens with the world launch; announcements on Discord and Telegram."
+    },
+    d_rules: {
+      ru: "Правила теста Kurogane: без GM у игроков, донат не сильнее капа, костюмы без статов.",
+      en: "Kurogane test rules: no player GMs, donations do not beat the cap, costumes have no stats."
+    },
+    d_about: {
+      ru: "Что такое Kurogane: неофициальный фанатский тест Lineage 2 Interlude. Чёрное железо, открытая дверь.",
+      en: "What Kurogane is: an unofficial fan test of Lineage 2 Interlude. Black iron, open door."
+    },
+    d_notfound: { ru: "Страница не найдена.", en: "Page not found." },
 
     ru_kicker: { ru: "Порядок", en: "Order" },
     ru_title: { ru: "Правила теста", en: "Test rules" },
@@ -190,8 +207,8 @@
       en: "Kurogane is a private fan test of Lineage 2 Interlude. It exists to try a clean chronicle, high rates, and a hard cap with a small circle — then open the door to people who want that pace."
     },
     ab_p2: {
-      ru: "Сайт и игровой мир — разные контуры. Здесь витрина: тексты, патч, правила, заглушка регистрации. Игра живёт отдельно и не торчит из этой страницы.",
-      en: "The site and the game world are separate tracks. This is the storefront: copy, patch, rules, a registration stub. The game lives elsewhere and is not hanging off this page."
+      ru: "Сайт и игровой мир — отдельные системы. Здесь — информация, патч и правила; игра работает на собственной инфраструктуре.",
+      en: "The site and the game world are separate systems. Here you get information, the patch and the rules; the game runs on its own infrastructure."
     },
     ab_p3: {
       ru: "Мы не правообладатель Lineage 2 и не делаем вид, что тест «согласован с издателем». Это любительская площадка. Если правообладатель попросит закрыть — закроем.",
@@ -231,6 +248,16 @@
       if (!entry) return;
       el.setAttribute("placeholder", entry[lang] || entry.ru);
     });
+    document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+      var entry = dict[el.getAttribute("data-i18n-aria")];
+      if (entry) el.setAttribute("aria-label", entry[lang] || entry.ru);
+    });
+    var page = document.body && document.body.getAttribute("data-page");
+    if (page && dict["t_" + page]) {
+      document.title = dict["t_" + page][lang];
+      var meta = document.querySelector('meta[name="description"]');
+      if (meta && dict["d_" + page]) meta.setAttribute("content", dict["d_" + page][lang]);
+    }
     document.querySelectorAll("[data-lang-btn]").forEach(function (btn) {
       btn.setAttribute("aria-pressed", btn.getAttribute("data-lang-btn") === lang ? "true" : "false");
     });

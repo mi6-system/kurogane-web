@@ -3,23 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kurogane — Interlude test</title>
-  <meta name="description" content="Kurogane — unofficial Lineage 2 Interlude test. Classic chronicle, cap +15 / +17, rates x32.2">
+  <title>Kurogane — Lineage 2 Interlude x32.2</title>
+  <meta name="description" content="Kurogane — неофициальный фанатский тест Lineage 2 Interlude. Чистая хроника, рейты x32.2, кап заточки +15 / +17, костюмы без статов.">
+  <meta name="theme-color" content="#09090b">
+  <link rel="canonical" href="https://kurogane.world/">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kurogane">
+  <meta property="og:title" content="Kurogane — Lineage 2 Interlude x32.2">
+  <meta property="og:description" content="Kurogane — неофициальный фанатский тест Lineage 2 Interlude. Чистая хроника, рейты x32.2, кап заточки +15 / +17, костюмы без статов.">
+  <meta property="og:url" content="https://kurogane.world/">
+  <meta property="og:image" content="https://kurogane.world/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Manrope:wght@400;500;600&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Kurogane","alternateName":"黒鉄","url":"https://kurogane.world/","description":"Неофициальный фанатский тест Lineage 2 Interlude.","inLanguage":["ru","en"]}</script>
 </head>
-<body>
-  <a class="skip" href="#main">Skip</a>
+<body data-page="home">
+  <a class="skip" href="#main" data-i18n="skip">Перейти к содержимому</a>
   <header class="site-header">
     <div class="wrap header-row">
       <a class="brand" href="index.html">
-        <img class="brand-mark" src="assets/mark.svg" alt="">
+        <img class="brand-mark" src="assets/mark.svg" alt="" width="28" height="28">
         <span>
           <span class="brand-name">Kurogane</span>
-          <span class="brand-kana" data-i18n="brand_kana">黒鉄</span>
+          <span class="brand-kana">黒鉄</span>
         </span>
       </a>
       <nav class="site-nav" id="site-nav" aria-label="Section">
@@ -38,7 +52,7 @@
           <button type="button" data-lang-btn="en">EN</button>
           <a href="es.html">ES</a>
         </div>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu" data-i18n-aria="menu"><span></span></button>
       </div>
     </div>
   </header>
@@ -46,7 +60,7 @@
     <section class="hero">
       <div class="hero-inner">
         <p class="kicker" data-i18n="hero_kicker">Lineage 2 · Interlude · x32.2</p>
-        <p class="slogan" data-i18n="slogan">чистый Interlude · кап +15 / +17</p>
+        <h1 class="slogan" data-i18n="slogan">чистый Interlude · кап +15 / +17</h1>
         <div class="badge" data-i18n="unofficial">неофициальный фанатский тест</div>
         <p class="lead" data-i18n="hero_lead">Приватный тестовый сервер. Чистая хроника, жёсткий кап заточки, костюмы как стиль — без статов. Двери открыты: это тест с друзьями, а не витрина «официального» гранд-сервера.</p>
         <div class="cta-row">
@@ -54,31 +68,25 @@
           <a class="btn btn-ghost" href="register.html" data-i18n="cta_register">Регистрация</a>
         </div>
         <div class="status-bar">
-          <div class="status" data-status="checking">
+          <div class="status" data-status="checking" hidden>
             <span class="status-dot" aria-hidden="true"></span>
             <span data-i18n="status_label">Сервер</span>
             <b data-status-label data-i18n="status_checking">проверяется</b>
           </div>
         </div>
-        <p class="muted" style="font-size:13px" data-i18n="status_hint">Статус выставляется вручную. Живой опрос мира в v1 не подключён.</p>
       </div>
     </section>
-    <section class="section wrap">
-      <h2 data-i18n="for_whom_title">Для кого</h2>
-      <div class="card">
-        <p data-i18n="for_whom_text">Для тех, кто хочет спокойно проверить Interlude x32.2 без гонки доната и без GM-персонажей у игроков. Пришёл, поставил патч, поиграл, написал, что сломалось.</p>
-      </div>
-    </section>
-    <section class="section wrap">
+
+    <section class="section wrap reveal">
       <h2 data-i18n="facts_title">Коротко о мире</h2>
       <div class="facts">
         <article class="fact">
           <p class="fact-k" data-i18n="fact_rates">Рейты</p>
-          <b data-i18n="fact_rates_v">x32.2</b>
+          <b class="fact-big" data-i18n="fact_rates_v">x32.2</b>
         </article>
         <article class="fact">
           <p class="fact-k" data-i18n="fact_chronicle">Хроника</p>
-          <b data-i18n="fact_chronicle_v">чистый Interlude</b>
+          <b class="fact-big" data-i18n="fact_chronicle_v">чистый Interlude</b>
         </article>
         <article class="fact">
           <p class="fact-k" data-i18n="fact_cap">Кап заточки</p>
@@ -90,7 +98,15 @@
         </article>
       </div>
     </section>
-    <section class="section wrap">
+
+    <section class="section wrap reveal">
+      <h2 data-i18n="for_whom_title">Для кого</h2>
+      <div class="card">
+        <p data-i18n="for_whom_text">Для тех, кто хочет спокойно проверить Interlude x32.2 без гонки доната и без GM-персонажей у игроков. Пришёл, поставил патч, поиграл, написал, что сломалось.</p>
+      </div>
+    </section>
+
+    <section class="section wrap reveal">
       <h2 data-i18n="steps_title">Как начать</h2>
       <div class="grid-3">
         <article class="step">
@@ -106,14 +122,15 @@
         <article class="step">
           <p class="step-num">03</p>
           <h3 data-i18n="step3_t">Игра</h3>
-          <p data-i18n="step3_d">Зайди своим тестовым аккаунтом. Адрес мира на витрине нарочно не светим крупно.</p>
+          <p data-i18n="step3_d">Адрес мира выдаётся отдельно — следи за анонсами в Discord и Telegram.</p>
         </article>
       </div>
     </section>
-    <section class="section wrap">
+
+    <section class="section wrap reveal">
       <h2 data-i18n="factions_title">Фракции стиля</h2>
       <p class="muted" data-i18n="factions_lead">Костюмы на тесте — это одежда, не сет с бонусами. Названия фракций, не чужие лицензии.</p>
-      <div class="grid-5" style="margin-top:14px">
+      <div class="grid-5 gap-top">
         <article class="faction">
           <h3 data-i18n="fac_north">Север</h3>
           <p data-i18n="fac_north_d">Скандинавский холод, мех, руны, железо.</p>
@@ -136,38 +153,35 @@
         </article>
       </div>
     </section>
-    <section class="section wrap">
-      <h2 data-i18n="play_title">Play</h2>
-      <p class="muted" data-i18n="play_hint">Поле оставлено. IP мира на главной не публикуем.</p>
-      <div class="play-box">
-        <input type="text" data-i18n-placeholder="play_placeholder" placeholder="адрес выдадут отдельно" readonly>
-        <a class="btn btn-ghost" href="download.html" data-i18n="cta_play">Play</a>
-      </div>
-    </section>
-    <section class="section wrap">
-      <h2 data-i18n="contacts_title">Контакты</h2>
-      <p class="muted" data-i18n="contacts_empty">Ссылки появятся здесь. Поля пока пустые.</p>
-      <div class="contacts" style="margin-top:14px">
-        <article class="card contact" data-contact="discord">
-          <h3 data-i18n="contact_discord">Discord</h3>
-          <p data-contact-value><small data-i18n="contact_soon">скоро</small></p>
-          <a data-contact-link hidden href="#" target="_blank" rel="noreferrer">Discord</a>
-        </article>
-        <article class="card contact" data-contact="telegram">
-          <h3 data-i18n="contact_telegram">Telegram</h3>
-          <p data-contact-value><small data-i18n="contact_soon">скоро</small></p>
-          <a data-contact-link hidden href="#" target="_blank" rel="noreferrer">Telegram</a>
-        </article>
+
+    <section class="section wrap reveal">
+      <h2 data-i18n="contacts_title">Сообщество</h2>
+      <p class="muted" data-i18n="contacts_lead">Анонсы, вопросы и баги — в сообществе.</p>
+      <div class="contacts gap-top">
+        <a class="card contact" data-contact="discord" href="#" target="_blank" rel="noopener noreferrer">
+          <h3>Discord</h3>
+          <p><span data-contact-state data-i18n="contact_soon">скоро</span></p>
+        </a>
+        <a class="card contact" data-contact="telegram" href="#" target="_blank" rel="noopener noreferrer">
+          <h3>Telegram</h3>
+          <p><span data-contact-state data-i18n="contact_soon">скоро</span></p>
+        </a>
       </div>
     </section>
   </main>
   <footer class="site-footer">
-    <div class="wrap footer-row">
+    <div class="wrap footer-grid">
       <div>
         <div class="footer-brand">KUROGANE · 黒鉄</div>
         <p data-i18n="foot_note">Kurogane — неофициальный фанатский тест. Не связан с правообладателем Lineage 2.</p>
+        <p class="footer-small" data-i18n="foot_rights">Lineage 2 и связанные названия принадлежат их правообладателям.</p>
       </div>
-      <p>kurogane.world</p>
+      <nav class="footer-nav" aria-label="Footer"><a href="index.html" data-i18n="nav_home">Главная</a><a href="download.html" data-i18n="nav_download">Скачать</a><a href="register.html" data-i18n="nav_register">Регистрация</a><a href="rules.html" data-i18n="nav_rules">Правила</a><a href="about.html" data-i18n="nav_about">О проекте</a></nav>
+      <div class="footer-social">
+        <a data-footer-contact="discord" href="#" target="_blank" rel="noopener noreferrer" hidden>Discord</a>
+        <a data-footer-contact="telegram" href="#" target="_blank" rel="noopener noreferrer" hidden>Telegram</a>
+        <span class="footer-small">kurogane.world</span>
+      </div>
     </div>
   </footer>
   <script src="js/config.js"></script>
