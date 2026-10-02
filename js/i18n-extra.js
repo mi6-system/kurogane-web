@@ -111,6 +111,11 @@
 
     dl_kicker: ["Cliente", "Client", "客户端", "クライアント", "클라이언트", "العميل", "קליינט"],
     dl_title: ["Cliente completo", "Client complet", "完整客户端", "フルクライアント", "풀 클라이언트", "العميل الكامل", "קליינט מלא"],
+    dl_install_title: ["Cómo instalar", "Comment installer", "安装方法", "インストール方法", "설치 방법", "طريقة التثبيت", "איך מתקינים"],
+    dl_s1: ["Descarga el archivo", "Télécharge l'archive", "下载压缩包", "アーカイブをダウンロード", "압축 파일 다운로드", "نزّل الأرشيف", "מורידים את הארכיון"],
+    dl_s2: ["Descomprímelo", "Décompresse-la", "解压", "展開する", "압축 해제", "فك الضغط", "מחלצים אותו"],
+    dl_s3: ["Abre la carpeta System", "Ouvre le dossier System", "打开 System 文件夹", "System フォルダを開く", "System 폴더 열기", "افتح مجلد System", "פותחים את התיקייה System"],
+    dl_s4: ["Ejecuta KuroganeLauncher", "Lance KuroganeLauncher", "运行 KuroganeLauncher", "KuroganeLauncher を起動", "KuroganeLauncher 실행", "شغّل KuroganeLauncher", "מפעילים את KuroganeLauncher"],
     dl_btn_soon: ["Cliente completo — pronto", "Client complet — bientôt", "完整客户端 — 即将上线", "フルクライアント — 近日公開", "풀 클라이언트 — 준비 중", "العميل الكامل — قريبًا", "קליינט מלא — בקרוב"],
     dl_btn_get: ["Descargar cliente completo", "Télécharger le client complet", "下载完整客户端", "フルクライアントをダウンロード", "풀 클라이언트 다운로드", "تنزيل العميل الكامل", "הורדת הקליינט המלא"],
 

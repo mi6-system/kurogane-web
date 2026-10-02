@@ -77,6 +77,11 @@
     dl_kicker: { ru: "Клиент", en: "Client" },
     dl_title: { ru: "Фулл клиент", en: "Full client" },
     dl_btn_soon: { ru: "Фулл клиент — скоро", en: "Full client — soon" },
+    dl_install_title: { ru: "Как установить", en: "How to install" },
+    dl_s1: { ru: "Скачай архив", en: "Download the archive" },
+    dl_s2: { ru: "Распакуй его", en: "Unpack it" },
+    dl_s3: { ru: "Открой папку System", en: "Open the System folder" },
+    dl_s4: { ru: "Запусти KuroganeLauncher", en: "Run KuroganeLauncher" },
     dl_btn_get: { ru: "Скачать фулл клиент", en: "Download full client" },
 
     rg_kicker: { ru: "Аккаунт", en: "Account" },

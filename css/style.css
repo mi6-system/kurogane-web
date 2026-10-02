@@ -260,7 +260,8 @@ button, input, select { font: inherit; color: inherit; }
   margin: 0 0 10px;
 }
 .muted { color: var(--muted); }
-.grid-3, .grid-2, .grid-5, .facts { display: grid; gap: 10px; }
+.grid-3, .grid-2, .grid-4, .grid-5, .facts { display: grid; gap: 10px; }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
 .grid-5 { grid-template-columns: repeat(5, 1fr); }
@@ -401,7 +402,7 @@ select {
   color: var(--text);
 }
 @media (max-width: 900px) {
-  .grid-3, .grid-5, .patch-hero, .contacts { grid-template-columns: 1fr 1fr; }
+  .grid-3, .grid-4, .grid-5, .patch-hero, .contacts { grid-template-columns: 1fr 1fr; }
   .hero { min-height: 78vh; }
 }
 @media (max-width: 720px) {
@@ -418,7 +419,7 @@ select {
   }
   .site-nav.is-open { display: block; }
   .site-nav ul { flex-direction: column; gap: 10px; }
-  .grid-3, .grid-2, .facts, .grid-5, .patch-hero, .contacts { grid-template-columns: 1fr; }
+  .grid-3, .grid-2, .grid-4, .facts, .grid-5, .patch-hero, .contacts { grid-template-columns: 1fr; }
   .hero {
     min-height: 0;
     background:
