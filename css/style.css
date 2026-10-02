@@ -3,11 +3,11 @@
   --elev: #121214;
   --card: #161618;
   --line: rgba(209, 69, 59, 0.34);
-  --line-weak: rgba(243, 239, 230, 0.08);
-  --text: #f2eee6;
+  --line-weak: rgba(0, 255, 65, 0.12);
+  --text: #00ff41;
   --muted: #8f8a80;
   --accent: #d1453b;
-  --accent-strong: #b9302a;
+  --accent-strong: #a82822;
   --ink: #09090b;
   --ok: #7dba7a;
   --off: #7a756e;
@@ -38,7 +38,7 @@ button, input, select { font: inherit; color: inherit; }
   left: 12px;
   top: -40px;
   background: var(--accent-strong);
-  color: #fff;
+  color: var(--text);
   padding: 8px 12px;
 }
 .skip:focus { top: 12px; }
@@ -102,7 +102,7 @@ button, input, select { font: inherit; color: inherit; }
 }
 .lang-switch button[aria-pressed="true"] {
   background: var(--accent-strong);
-  color: #fff;
+  color: var(--text);
 }
 .lang-switch a:hover { color: var(--text); }
 .nav-toggle {
@@ -191,7 +191,7 @@ button, input, select { font: inherit; color: inherit; }
 .lead {
   max-width: 560px;
   margin: 0 auto 16px;
-  color: #c9c3b6;
+  color: #6bff8f;
   font-size: 14px;
   text-shadow: 0 2px 16px rgba(0,0,0,0.7);
 }
@@ -209,13 +209,13 @@ button, input, select { font: inherit; color: inherit; }
   padding: 0 16px;
   border: 1px solid var(--accent);
   background: var(--accent-strong);
-  color: #fff;
+  color: var(--text);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 12px;
   cursor: pointer;
 }
-.btn:hover { background: #d03a32; border-color: #d03a32; color: #fff; }
+.btn:hover { background: #c0332c; border-color: #c0332c; color: var(--text); }
 .btn-ghost {
   background: rgba(9,9,11,0.45);
   color: var(--text);
@@ -449,8 +449,8 @@ a.card .is-live-label, .contact.is-live [data-contact-state] { color: var(--acce
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .btn { transition: background .2s ease, border-color .2s ease, color .2s ease, transform .15s ease; }
 .btn:active { transform: translateY(1px); }
-.lang-switch a[aria-current="page"] { color: #fff; background: var(--accent-strong); }
-::selection { background: var(--accent-strong); color: #fff; }
+.lang-switch a[aria-current="page"] { color: var(--text); background: var(--accent-strong); }
+::selection { background: var(--accent-strong); color: var(--text); }
 
 /* footer */
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr auto; gap: 24px; align-items: start; }
