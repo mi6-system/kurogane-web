@@ -303,7 +303,7 @@ button, input, select { font: inherit; color: inherit; }
   border: 1px solid var(--line);
   color: var(--muted);
 }
-.contacts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.contacts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .contact small { color: var(--muted); }
 .page-head { padding: 36px 0 8px; }
 .page-head h1 {

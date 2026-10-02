@@ -58,7 +58,7 @@ DNS у регистратора (Spaceship): A / AAAA / CNAME на **веб-хо
 - `status`: `"online"` | `"offline"` | `"checking"` (при `checking` плашка статуса скрыта)
 - `patch.ready`: `true` когда zip готов
 - `patch.file`: ссылка на архив (внешний URL или путь вроде `"files/kurogane-patch-0.1.zip"`)
-- `contacts.discord` / `contacts.telegram`: полные URL, когда появятся
+- `contacts.discord` / `contacts.telegram` / `contacts.instagram`: полные URL, когда появятся
 
 Страница регистрации — информационная: форма удалена, сайт не собирает логины и пароли. Когда появится бэкенд, форму можно вернуть из истории git.
 

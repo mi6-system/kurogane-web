@@ -8,6 +8,7 @@ window.KUROGANE = {
   },
   contacts: {
     discord: "https://discord.gg/WPMZJR2Ktg",
-    telegram: "https://t.me/kurogane_world"
+    telegram: "https://t.me/kurogane_world",
+    instagram: "https://www.instagram.com/kurogane.world"
   }
 };
