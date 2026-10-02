@@ -497,7 +497,10 @@ a.card .is-live-label, .contact.is-live [data-contact-state] { color: var(--acce
 :lang(ko) { --font-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; --font-display: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
 :lang(ar) { --font-body: "Noto Sans Arabic", "Segoe UI", Tahoma, "DejaVu Sans", sans-serif; --font-display: "Noto Sans Arabic", "Segoe UI", Tahoma, "DejaVu Sans", sans-serif; }
 :lang(he) { --font-body: "Noto Sans Hebrew", "Segoe UI", Arial, "DejaVu Sans", sans-serif; --font-display: "Noto Sans Hebrew", "Segoe UI", Arial, "DejaVu Sans", sans-serif; }
+:lang(hi) { --font-body: "Noto Sans Devanagari", "Nirmala UI", "Mangal", "Lohit Devanagari", "DejaVu Sans", sans-serif; --font-display: "Noto Sans Devanagari", "Nirmala UI", "Mangal", "Lohit Devanagari", "DejaVu Sans", sans-serif; }
 :lang(zh) h1, :lang(zh) h2, :lang(ja) h1, :lang(ja) h2, :lang(ko) h1, :lang(ko) h2 { letter-spacing: 0.06em; }
 /* Arabic joins letters: tracking and forced caps would break the script */
 [dir="rtl"] * { letter-spacing: 0 !important; text-transform: none !important; }
 [dir="rtl"] .step-num, [dir="rtl"] .version-num { direction: ltr; unicode-bidi: isolate; }
+
+:lang(hi) * { letter-spacing: 0 !important; text-transform: none !important; }

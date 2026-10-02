@@ -186,14 +186,16 @@
     { code: "ja", name: "日本語", dir: "ltr" },
     { code: "ko", name: "한국어", dir: "ltr" },
     { code: "ar", name: "العربية", dir: "rtl" },
-    { code: "he", name: "עברית", dir: "rtl" }
+    { code: "he", name: "עברית", dir: "rtl" },
+    { code: "hi", name: "हिन्दी", dir: "ltr" }
   ];
   var FONT_CSS = {
     zh: "Noto+Sans+SC:wght@400;600",
     ja: "Noto+Sans+JP:wght@400;600",
     ko: "Noto+Sans+KR:wght@400;600",
     ar: "Noto+Sans+Arabic:wght@400;600",
-    he: "Noto+Sans+Hebrew:wght@400;600"
+    he: "Noto+Sans+Hebrew:wght@400;600",
+    hi: "Noto+Sans+Devanagari:wght@400;600"
   };
 
   function find(code) {
