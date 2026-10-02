@@ -17,10 +17,6 @@
     status_checking: { ru: "проверяется", en: "checking" },
 
     hero_kicker: { ru: "Lineage 2 · Interlude · x32.2", en: "Lineage 2 · Interlude · x32.2" },
-    hero_lead: {
-      ru: "Приватный тестовый сервер. Чистая хроника, жёсткий кап заточки, костюмы как стиль — без статов. Двери открыты: это тест с друзьями, а не витрина «официального» гранд-сервера.",
-      en: "A private test realm. Clean chronicle, hard enchant cap, costumes as style — no stats. The door is open: a test with friends, not a showcase for an “official” grand server."
-    },
     cta_download: { ru: "Скачать фулл клиент", en: "Get the full client" },
     cta_register: { ru: "Регистрация", en: "Create account" },
 
@@ -38,8 +34,8 @@
     },
     step2_t: { ru: "Запуск", en: "Launch" },
     step2_d: {
-      ru: "Поставь файлы в клиент Interlude и запусти его как обычно.",
-      en: "Drop the files into an Interlude client and start it as usual."
+      ru: "Распакуй клиент и запусти его как обычно.",
+      en: "Unpack the client and start it as usual."
     },
     step3_t: { ru: "Игра", en: "Play" },
     step3_d: {
