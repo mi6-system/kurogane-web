@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Kurogane">
   <rect x="2" y="2" width="60" height="60" rx="2" stroke="#e0a84a" stroke-width="1.25"/>
   <rect x="7" y="7" width="50" height="50" rx="1" stroke="#e0a84a" stroke-opacity="0.35" stroke-width="0.75"/>
-  <path d="M18 44 V20 H28.5 C35.2 20 39 23.6 39 28.4 C39 33.2 35.2 36.8 28.5 36.8 H18" stroke="#f4f1ea" stroke-width="2.4" stroke-linejoin="miter"/>
-  <path d="M18 36.8 H30 L46 44" stroke="#e0a84a" stroke-width="2.2"/>
+  <path d="M18 44 V20 H28.5 C35.2 20 39 23.6 39 28.4 C39 33.2 35.2 36.8 28.5 36.8 H18" stroke="#d1453b" stroke-width="2.4" stroke-linejoin="miter"/>
+  <path d="M18 36.8 H30 L46 44" stroke="#d1453b" stroke-width="2.2"/>
 </svg>
