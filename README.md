@@ -20,6 +20,7 @@ js/i18n.js          RU + EN, движок переключения языка
 js/i18n-extra.js    ES, FR, ZH, JA, KO, AR, HE (строка = ключ, порядок es, fr, zh, ja, ko, ar, he)
 js/i18n-hi.js       HI (хинди, объект ключ → текст)
 js/i18n-eu.js       DE, PT, IT (строка = ключ, порядок de, pt, it)
+js/i18n-tr.js       TR (турецкий, объект ключ → текст)
 js/main.js
 assets/mark.svg, hero.jpg, hero-m.jpg (мобильный), og.jpg (превью ссылок 1200x630)
 files/              слот под zip патча
@@ -63,7 +64,7 @@ DNS у регистратора (Spaceship): A / AAAA / CNAME на **веб-хо
 
 ## Язык
 
-Выпадающий список в шапке: RU, EN, ES, FR, DE, PT, IT, ZH, JA, KO, AR, HE, HI. Выбор хранится в `localStorage`, по умолчанию берётся язык браузера, иначе EN.
+Выпадающий список в шапке: RU, EN, ES, FR, DE, PT, IT, TR, ZH, JA, KO, AR, HE, HI. Выбор хранится в `localStorage`, по умолчанию берётся язык браузера, иначе EN.
 Для AR и HE включается `dir="rtl"`; шрифты для ZH / JA / KO / AR / HE / HI подгружаются с Google Fonts только при выборе языка.
 Заголовок и description страницы тоже переключаются (ключи `t_*` / `d_*`, страница определяется по `<body data-page>`).
 `es.html` — только редирект на главную с испанским языком (для старых ссылок).

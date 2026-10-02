@@ -190,6 +190,7 @@
     { code: "de", name: "Deutsch", dir: "ltr" },
     { code: "pt", name: "Português", dir: "ltr" },
     { code: "it", name: "Italiano", dir: "ltr" },
+    { code: "tr", name: "Türkçe", dir: "ltr" },
     { code: "zh", name: "中文", dir: "ltr" },
     { code: "ja", name: "日本語", dir: "ltr" },
     { code: "ko", name: "한국어", dir: "ltr" },
