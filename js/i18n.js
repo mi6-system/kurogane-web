@@ -50,24 +50,7 @@
     fact_chronicle_v: { ru: "чистый Interlude", en: "clean Interlude" },
     fact_cap: { ru: "Кап заточки", en: "Enchant cap" },
     fact_cap_v: { ru: "броня / бижу +15 (100%), оружие +17 (100%)", en: "armor / jewels +15 (100%), weapon +17 (100%)" },
-    fact_style: { ru: "Костюмы", en: "Costumes" },
-    fact_style_v: { ru: "фракции стиля, без статов", en: "style factions, no stats" },
 
-    factions_title: { ru: "Фракции стиля", en: "Style factions" },
-    factions_lead: {
-      ru: "Костюмы на тесте — это одежда, не сет с бонусами. Названия фракций, не чужие лицензии.",
-      en: "Costumes on this test are clothes, not bonus sets. Faction names, not licensed characters."
-    },
-    fac_north: { ru: "Север", en: "North" },
-    fac_north_d: { ru: "Скандинавский холод, мех, руны, железо.", en: "Northern cold, fur, runes, iron." },
-    fac_field: { ru: "Поле", en: "Field" },
-    fac_field_d: { ru: "Славянский крой, лён, обереги, земля.", en: "Slavic cut, linen, charms, soil." },
-    fac_blade: { ru: "Клинок", en: "Blade" },
-    fac_blade_d: { ru: "Самурайская линия, лак, ткань, сталь.", en: "Samurai line, lacquer, cloth, steel." },
-    fac_orbit: { ru: "Орбита", en: "Orbit" },
-    fac_orbit_d: { ru: "Космо-силуэт, вакуум, кромка света.", en: "Cosmo silhouette, vacuum, light edge." },
-    fac_cut: { ru: "Крой", en: "Cut" },
-    fac_cut_d: { ru: "Модники: городской крой, ткань, жест.", en: "Street cut, cloth, attitude." },
 
 
     contacts_title: { ru: "Сообщество", en: "Community" },
@@ -116,8 +99,8 @@
     t_about: { ru: "О проекте — Kurogane", en: "About — Kurogane" },
     t_notfound: { ru: "404 — Kurogane", en: "404 — Kurogane" },
     d_home: {
-      ru: "Kurogane — неофициальный фанатский тест Lineage 2 Interlude. Чистая хроника, рейты x32.2, кап заточки +15 / +17, костюмы без статов.",
-      en: "Kurogane — an unofficial fan test of Lineage 2 Interlude. Clean chronicle, x32.2 rates, +15 / +17 enchant cap, costumes without stats."
+      ru: "Kurogane — неофициальный фанатский тест Lineage 2 Interlude. Чистая хроника, рейты x32.2, кап заточки +15 / +17.",
+      en: "Kurogane — an unofficial fan test of Lineage 2 Interlude. Clean chronicle, x32.2 rates, +15 / +17 enchant cap."
     },
     d_download: {
       ru: "Фулл клиент для теста Kurogane (Lineage 2 Interlude): ссылка на скачивание.",
@@ -128,8 +111,8 @@
       en: "How to join the Kurogane test: registration opens with the world launch; announcements on Discord and Telegram."
     },
     d_rules: {
-      ru: "Правила теста Kurogane: без GM у игроков, донат не сильнее капа, костюмы без статов.",
-      en: "Kurogane test rules: no player GMs, donations do not beat the cap, costumes have no stats."
+      ru: "Правила теста Kurogane: без GM у игроков, донат не сильнее капа.",
+      en: "Kurogane test rules: no player GMs, donations do not beat the cap."
     },
     d_about: {
       ru: "Что такое Kurogane: неофициальный фанатский тест Lineage 2 Interlude. Чёрное железо, открытая дверь.",
@@ -152,11 +135,6 @@
     ru_2_d: {
       ru: "Даже если позже появится поддержка сервера, она не даёт силу выше капа заточки и не обходит правила теста.",
       en: "Even if server support appears later, it will not grant power above the enchant cap or skip test rules."
-    },
-    ru_3_t: { ru: "Костюмы без статов", en: "Costumes have no stats" },
-    ru_3_d: {
-      ru: "Скины и фракции стиля — внешность. Бонусов к урону, защите и заточкам в костюме нет.",
-      en: "Skins and style factions are looks. No damage, defense, or enchant bonuses on a costume."
     },
     ru_4_t: { ru: "Чистый Interlude", en: "Clean Interlude" },
     ru_4_d: {

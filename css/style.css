@@ -264,7 +264,7 @@ button, input, select { font: inherit; color: inherit; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
 .grid-5 { grid-template-columns: repeat(5, 1fr); }
-.facts { grid-template-columns: repeat(4, 1fr); }
+.facts { grid-template-columns: repeat(3, 1fr); }
 .card, .step, .fact, .faction, .rule {
   background: var(--card);
   border: 1px solid var(--line-weak);
@@ -401,7 +401,7 @@ select {
   color: var(--text);
 }
 @media (max-width: 900px) {
-  .grid-3, .facts, .grid-5, .patch-hero, .contacts { grid-template-columns: 1fr 1fr; }
+  .grid-3, .grid-5, .patch-hero, .contacts { grid-template-columns: 1fr 1fr; }
   .hero { min-height: 78vh; }
 }
 @media (max-width: 720px) {
