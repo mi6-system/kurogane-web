@@ -11,6 +11,7 @@
   --ok: #7dba7a;
   --off: #7a756e;
   --danger: #c56a55;
+  --red: #d1453b;
   --max: 1040px;
   --font-display: "Cinzel", "Times New Roman", serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
@@ -79,7 +80,7 @@ button, input, select { font: inherit; color: inherit; }
   font-family: var(--font-jp);
   font-size: 10px;
   letter-spacing: 0.28em;
-  color: var(--accent);
+  color: var(--red);
 }
 .header-tools { display: flex; align-items: center; gap: 8px; }
 .lang-switch {
@@ -430,7 +431,7 @@ select {
 
 /* ---- polish ---- */
 .gap-top { margin-top: 14px; }
-.hero-kana { font-family: var(--font-jp); color: var(--accent); letter-spacing: 0.4em; margin: 0 0 14px; }
+.hero-kana { font-family: var(--font-jp); color: var(--red); letter-spacing: 0.4em; margin: 0 0 14px; }
 .fact-big { display: block; font-size: 20px; letter-spacing: 0.02em; }
 .card, .step, .fact, .faction, .rule { transition: border-color .2s ease, transform .2s ease, background .2s ease; }
 .step:hover, .fact:hover, .faction:hover, .rule:hover, a.card:hover { border-color: var(--line); background: #1a1a1d; }
@@ -470,3 +471,5 @@ a.card .is-live-label, .contact.is-live [data-contact-state] { color: var(--acce
 
 .card .fact-k, .step .step-num { color: var(--accent); font-size: 10px; }
 .card .version-num { color: var(--text); font-size: 34px; }
+
+.kana-red { font-family: var(--font-jp); color: var(--red); }
