@@ -5,8 +5,8 @@
     nav_register: { ru: "Регистрация", en: "Register" },
     nav_rules: { ru: "Правила", en: "Rules" },
     nav_about: { ru: "О проекте", en: "About" },
-    nav_es: { ru: "ES", en: "ES" },
 
+    lang_label: { ru: "Язык", en: "Language" },
     brand_kana: { ru: "黒鉄", en: "黒鉄" },
     unofficial: { ru: "неофициальный фанатский тест", en: "unofficial fan test server" },
     slogan: { ru: "чистый Interlude · кап +15 / +17", en: "classic Interlude · cap +15 / +17" },
@@ -177,56 +177,105 @@
     ab_not_4: { ru: "не обещание вечного онлайна", en: "not a promise of eternal uptime" }
   };
 
-  var htmlLang = { ru: "ru", en: "en" };
+  var LANGS = [
+    { code: "ru", name: "Русский", dir: "ltr" },
+    { code: "en", name: "English", dir: "ltr" },
+    { code: "es", name: "Español", dir: "ltr" },
+    { code: "fr", name: "Français", dir: "ltr" },
+    { code: "zh", name: "中文", dir: "ltr" },
+    { code: "ja", name: "日本語", dir: "ltr" },
+    { code: "ko", name: "한국어", dir: "ltr" },
+    { code: "ar", name: "العربية", dir: "rtl" },
+    { code: "he", name: "עברית", dir: "rtl" }
+  ];
+  var FONT_CSS = {
+    zh: "Noto+Sans+SC:wght@400;600",
+    ja: "Noto+Sans+JP:wght@400;600",
+    ko: "Noto+Sans+KR:wght@400;600",
+    ar: "Noto+Sans+Arabic:wght@400;600",
+    he: "Noto+Sans+Hebrew:wght@400;600"
+  };
+
+  function find(code) {
+    for (var i = 0; i < LANGS.length; i++) if (LANGS[i].code === code) return LANGS[i];
+    return null;
+  }
 
   function getLang() {
     try {
       var saved = localStorage.getItem("kurogane-lang");
-      if (saved === "en" || saved === "ru") return saved;
+      if (find(saved)) return saved;
     } catch (e) {}
-    var nav = (navigator.language || "ru").toLowerCase();
-    return nav.indexOf("en") === 0 ? "en" : "ru";
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+    for (var i = 0; i < list.length; i++) {
+      var code = String(list[i]).toLowerCase().split("-")[0];
+      if (code === "iw") code = "he";
+      if (find(code)) return code;
+    }
+    return "en";
+  }
+
+  function loadFont(lang) {
+    var fam = FONT_CSS[lang];
+    if (!fam || document.getElementById("font-" + lang)) return;
+    var link = document.createElement("link");
+    link.id = "font-" + lang;
+    link.rel = "stylesheet";
+    link.href = "https://fonts.googleapis.com/css2?family=" + fam + "&display=swap";
+    document.head.appendChild(link);
+  }
+
+  function pick(entry, lang) {
+    return entry[lang] || entry.en || entry.ru;
   }
 
   function setLang(lang) {
-    if (lang !== "en" && lang !== "ru") lang = "ru";
+    var meta = find(lang);
+    if (!meta) { lang = "en"; meta = find("en"); }
     try { localStorage.setItem("kurogane-lang", lang); } catch (e) {}
-    document.documentElement.lang = htmlLang[lang];
+    var root = document.documentElement;
+    root.lang = lang;
+    root.dir = meta.dir;
+    loadFont(lang);
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
-      var key = el.getAttribute("data-i18n");
-      var entry = dict[key];
-      if (!entry) return;
-      el.textContent = entry[lang] || entry.ru;
+      var entry = dict[el.getAttribute("data-i18n")];
+      if (entry) el.textContent = pick(entry, lang);
     });
     document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
-      var key = el.getAttribute("data-i18n-placeholder");
-      var entry = dict[key];
-      if (!entry) return;
-      el.setAttribute("placeholder", entry[lang] || entry.ru);
+      var entry = dict[el.getAttribute("data-i18n-placeholder")];
+      if (entry) el.setAttribute("placeholder", pick(entry, lang));
     });
     document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
       var entry = dict[el.getAttribute("data-i18n-aria")];
-      if (entry) el.setAttribute("aria-label", entry[lang] || entry.ru);
+      if (entry) el.setAttribute("aria-label", pick(entry, lang));
     });
     var page = document.body && document.body.getAttribute("data-page");
     if (page && dict["t_" + page]) {
-      document.title = dict["t_" + page][lang];
-      var meta = document.querySelector('meta[name="description"]');
-      if (meta && dict["d_" + page]) meta.setAttribute("content", dict["d_" + page][lang]);
+      document.title = pick(dict["t_" + page], lang);
+      var desc = document.querySelector('meta[name="description"]');
+      if (desc && dict["d_" + page]) desc.setAttribute("content", pick(dict["d_" + page], lang));
     }
-    document.querySelectorAll("[data-lang-btn]").forEach(function (btn) {
-      btn.setAttribute("aria-pressed", btn.getAttribute("data-lang-btn") === lang ? "true" : "false");
+    document.querySelectorAll("[data-lang-select]").forEach(function (sel) { sel.value = lang; });
+    document.dispatchEvent(new CustomEvent("kurogane:lang", { detail: lang }));
+  }
+
+  function buildSelects() {
+    document.querySelectorAll("[data-lang-select]").forEach(function (sel) {
+      if (sel.options.length) return;
+      LANGS.forEach(function (l) {
+        var o = document.createElement("option");
+        o.value = l.code;
+        o.textContent = l.name;
+        sel.appendChild(o);
+      });
+      sel.addEventListener("change", function () { setLang(sel.value); });
     });
   }
 
-  window.KuroganeI18n = { dict: dict, getLang: getLang, setLang: setLang };
+  window.KuroganeI18n = { dict: dict, languages: LANGS, getLang: getLang, setLang: setLang };
 
   document.addEventListener("DOMContentLoaded", function () {
+    buildSelects();
     setLang(getLang());
-    document.querySelectorAll("[data-lang-btn]").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        setLang(btn.getAttribute("data-lang-btn"));
-      });
-    });
   });
 })();

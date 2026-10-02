@@ -7,7 +7,7 @@
   <meta name="description" content="Что такое Kurogane: неофициальный фанатский тест Lineage 2 Interlude. Чёрное железо, открытая дверь.">
   <meta name="theme-color" content="#09090b">
   <link rel="canonical" href="https://kurogane.world/about.html">
-  <link rel="icon" href="assets/mark.svg?v=9" type="image/svg+xml">
+  <link rel="icon" href="assets/mark.svg?v=10" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kurogane">
   <meta property="og:title" content="О проекте — Kurogane">
@@ -22,14 +22,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Manrope:wght@400;500;600&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body data-page="about">
   <a class="skip" href="#main" data-i18n="skip">Перейти к содержимому</a>
   <header class="site-header">
     <div class="wrap header-row">
       <a class="brand" href="index.html">
-        <img class="brand-mark" src="assets/mark.svg?v=9" alt="" width="28" height="28">
+        <img class="brand-mark" src="assets/mark.svg?v=10" alt="" width="28" height="28">
         <span>
           <span class="brand-name">Kurogane</span>
           <span class="brand-kana">黒鉄</span>
@@ -42,14 +42,11 @@
           <li><a href="register.html" data-i18n="nav_register">Регистрация</a></li>
           <li><a href="rules.html" data-i18n="nav_rules">Правила</a></li>
           <li><a href="about.html" aria-current="page" data-i18n="nav_about">О проекте</a></li>
-          <li><a href="es.html" data-i18n="nav_es">ES</a></li>
         </ul>
       </nav>
       <div class="header-tools">
-        <div class="lang-switch" role="group" aria-label="Language">
-          <button type="button" data-lang-btn="ru" aria-pressed="true">RU</button>
-          <button type="button" data-lang-btn="en">EN</button>
-          <a href="es.html">ES</a>
+        <div class="lang-switch">
+          <select class="lang-select" data-lang-select aria-label="Language" data-i18n-aria="lang_label"></select>
         </div>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu" data-i18n-aria="menu"><span></span></button>
       </div>
@@ -90,8 +87,9 @@
       </div>
     </div>
   </footer>
-  <script src="js/config.js?v=9"></script>
-  <script src="js/i18n.js?v=9"></script>
-  <script src="js/main.js?v=9"></script>
+  <script src="js/config.js?v=10"></script>
+  <script src="js/i18n.js?v=10"></script>
+  <script src="js/i18n-extra.js?v=10"></script>
+  <script src="js/main.js?v=10"></script>
 </body>
 </html>

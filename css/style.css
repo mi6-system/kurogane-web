@@ -35,7 +35,7 @@ a:hover { color: #ee6b60; }
 button, input, select { font: inherit; color: inherit; }
 .skip {
   position: absolute;
-  left: 12px;
+  inset-inline-start: 12px;
   top: -40px;
   background: var(--accent-strong);
   color: var(--ink);
@@ -313,7 +313,7 @@ button, input, select { font: inherit; color: inherit; }
   font-size: clamp(26px, 4vw, 40px);
   margin: 6px 0 8px;
 }
-.page-head .lead { margin-left: 0; text-align: left; max-width: 640px; }
+.page-head .lead { margin-inline-start: 0; text-align: start; max-width: 640px; }
 .patch-hero {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
@@ -354,7 +354,7 @@ select {
   border: 1px solid var(--line);
 }
 .notice {
-  border-left: 2px solid var(--accent);
+  border-inline-start: 2px solid var(--accent);
   padding: 8px 10px;
   background: rgba(209, 69, 59, 0.08);
   color: var(--muted);
@@ -442,7 +442,7 @@ a.card .is-live-label, .contact.is-live [data-contact-state] { color: var(--acce
 .contact:not(.is-live) { opacity: .7; cursor: default; }
 .patch-card .state { margin-top: 8px; }
 .patch-action { margin: 18px 0 0; }
-.install { margin: 4px 0 0; padding-left: 18px; color: var(--muted); font-size: 13px; }
+.install { margin: 4px 0 0; padding-inline-start: 18px; color: var(--muted); font-size: 13px; }
 .install li { margin: 6px 0; }
 .site-header { transition: box-shadow .2s ease, background .2s ease; }
 .site-header.is-scrolled { box-shadow: 0 6px 24px rgba(0,0,0,.45); background: rgba(9,9,11,.94); }
@@ -474,3 +474,30 @@ a.card .is-live-label, .contact.is-live [data-contact-state] { color: var(--acce
 .card .version-num { color: var(--text); font-size: 34px; }
 
 .kana-red { font-family: var(--font-jp); color: var(--red); }
+
+/* language select */
+.lang-select {
+  appearance: none;
+  -webkit-appearance: none;
+  min-height: 32px;
+  padding: 0 28px 0 10px;
+  border: 0;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23ff4d42' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat right 9px center;
+  color: var(--text);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.lang-select option { background: var(--elev); color: var(--text); }
+[dir="rtl"] .lang-select { padding: 0 10px 0 28px; background-position: left 9px center; }
+
+/* scripts */
+:lang(zh) { --font-body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "WenQuanYi Zen Hei", sans-serif; --font-display: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "WenQuanYi Zen Hei", sans-serif; }
+:lang(ja) { --font-body: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", "IPAGothic", sans-serif; --font-display: "Noto Serif JP", "Noto Sans JP", "Hiragino Mincho ProN", "Yu Mincho", serif; }
+:lang(ko) { --font-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; --font-display: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+:lang(ar) { --font-body: "Noto Sans Arabic", "Segoe UI", Tahoma, "DejaVu Sans", sans-serif; --font-display: "Noto Sans Arabic", "Segoe UI", Tahoma, "DejaVu Sans", sans-serif; }
+:lang(he) { --font-body: "Noto Sans Hebrew", "Segoe UI", Arial, "DejaVu Sans", sans-serif; --font-display: "Noto Sans Hebrew", "Segoe UI", Arial, "DejaVu Sans", sans-serif; }
+:lang(zh) h1, :lang(zh) h2, :lang(ja) h1, :lang(ja) h2, :lang(ko) h1, :lang(ko) h2 { letter-spacing: 0.06em; }
+/* Arabic joins letters: tracking and forced caps would break the script */
+[dir="rtl"] * { letter-spacing: 0 !important; text-transform: none !important; }
+[dir="rtl"] .step-num, [dir="rtl"] .version-num { direction: ltr; unicode-bidi: isolate; }

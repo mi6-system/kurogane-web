@@ -108,8 +108,6 @@
     bindHeader();
     bindReveal();
     // re-apply dynamic labels after a language switch
-    $all("[data-lang-btn]").forEach(function (btn) {
-      btn.addEventListener("click", function () { applyStatus(); applyPatch(); applyContacts(); });
-    });
+    document.addEventListener("kurogane:lang", function () { applyStatus(); applyPatch(); applyContacts(); });
   });
 })();
