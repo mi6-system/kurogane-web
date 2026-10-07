@@ -41,13 +41,13 @@
     ],
     step2_t: ["Inicio", "Lancement", "启动", "起動", "실행", "التشغيل", "הפעלה"],
     step2_d: [
-      "Descomprime el cliente y ábrelo como de costumbre.",
-      "Décompresse le client et lance-le comme d'habitude.",
-      "解压客户端，像平常一样启动。",
-      "クライアントを展開して、いつも通り起動します。",
-      "클라이언트의 압축을 풀고 평소처럼 실행하세요.",
-      "فك ضغط العميل وشغّله كالمعتاد.",
-      "מחלצים את הקליינט ומפעילים כרגיל."
+      "Abre la carpeta del cliente, haz clic en Kurogane y espera la actualización.",
+      "Ouvre le dossier du client, clique sur Kurogane et attends la mise à jour.",
+      "打开客户端文件夹，点击 Kurogane，等待更新完成。",
+      "クライアントのフォルダを開き、Kurogane をクリックして、更新が終わるのを待ちます。",
+      "클라이언트 폴더를 열고 Kurogane를 클릭한 뒤 업데이트가 끝날 때까지 기다리세요.",
+      "افتح مجلد العميل، واضغط على Kurogane، وانتظر انتهاء التحديث.",
+      "פותחים את תיקיית הקליינט, לוחצים על Kurogane וממתינים לעדכון."
     ],
     step3_t: ["Juego", "Jeu", "游戏", "プレイ", "플레이", "اللعب", "משחק"],
     step3_d: [
@@ -112,10 +112,11 @@
     dl_kicker: ["Cliente", "Client", "客户端", "クライアント", "클라이언트", "العميل", "קליינט"],
     dl_title: ["Cliente completo", "Client complet", "完整客户端", "フルクライアント", "풀 클라이언트", "العميل الكامل", "קליינט מלא"],
     dl_install_title: ["Cómo instalar", "Comment installer", "安装方法", "インストール方法", "설치 방법", "طريقة التثبيت", "איך מתקינים"],
-    dl_s1: ["Descarga el archivo", "Télécharge l'archive", "下载压缩包", "アーカイブをダウンロード", "압축 파일 다운로드", "نزّل الأرشيف", "מורידים את הארכיון"],
-    dl_s2: ["Descomprímelo", "Décompresse-la", "解压", "展開する", "압축 해제", "فك الضغط", "מחלצים אותו"],
-    dl_s3: ["Abre la carpeta System", "Ouvre le dossier System", "打开 System 文件夹", "System フォルダを開く", "System 폴더 열기", "افتح مجلد System", "פותחים את התיקייה System"],
-    dl_s4: ["Ejecuta KuroganeLauncher", "Lance KuroganeLauncher", "运行 KuroganeLauncher", "KuroganeLauncher を起動", "KuroganeLauncher 실행", "شغّل KuroganeLauncher", "מפעילים את KuroganeLauncher"],
+    dl_s1: ["Descarga el cliente", "Télécharge le client", "下载客户端", "クライアントをダウンロード", "클라이언트 다운로드", "نزّل العميل", "מורידים את הקליינט"],
+    dl_s2: ["Abre la carpeta", "Ouvre le dossier", "打开文件夹", "フォルダを開く", "폴더 열기", "افتح المجلد", "פותחים את התיקייה"],
+    dl_s3: ["Haz clic en Kurogane", "Clique sur Kurogane", "点击 Kurogane", "Kurogane をクリック", "Kurogane 클릭", "اضغط على Kurogane", "לוחצים על Kurogane"],
+    dl_s4: ["Espera la actualización", "Attends la mise à jour", "等待更新完成", "更新が終わるのを待つ", "업데이트 대기", "انتظر انتهاء التحديث", "ממתינים לעדכון"],
+    dl_s5: ["Entra al juego", "Entre dans le jeu", "进入游戏", "ゲームに入る", "게임 접속", "ادخل اللعبة", "נכנסים למשחק"],
     dl_btn_soon: ["Cliente completo — pronto", "Client complet — bientôt", "完整客户端 — 即将上线", "フルクライアント — 近日公開", "풀 클라이언트 — 준비 중", "العميل الكامل — قريبًا", "קליינט מלא — בקרוב"],
     dl_btn_get: ["Descargar cliente completo", "Télécharger le client complet", "下载完整客户端", "フルクライアントをダウンロード", "풀 클라이언트 다운로드", "تنزيل العميل الكامل", "הורדת הקליינט המלא"],
 

@@ -4,7 +4,7 @@ window.KUROGANE = {
   patch: {
     version: "0.1",
     ready: true,
-    file: "https://drive.google.com/file/d/1L2tbrvq9XAmc6XOA2AbUZIYuYefMupyv/view?usp=sharing"
+    file: "https://drive.google.com/file/d/1zcF8DsKp4jmkZid8BX_XtdJzjorpcVzh/view?usp=sharing"
   },
   contacts: {
     discord: "https://discord.gg/WPMZJR2Ktg",

@@ -33,9 +33,9 @@
     ],
     step2_t: ["Start", "Execução", "Avvio"],
     step2_d: [
-      "Entpacke den Client und starte ihn wie gewohnt.",
-      "Descompacte o cliente e execute-o como de costume.",
-      "Estrai il client e avvialo come al solito."
+      "Öffne den Client-Ordner, klicke auf Kurogane und warte auf das Update.",
+      "Abra a pasta do cliente, clique em Kurogane e aguarde a atualização.",
+      "Apri la cartella del client, clicca su Kurogane e attendi l'aggiornamento."
     ],
     step3_t: ["Spiel", "Jogo", "Gioco"],
     step3_d: [
@@ -80,10 +80,11 @@
     dl_kicker: ["Client", "Cliente", "Client"],
     dl_title: ["Vollständiger Client", "Cliente completo", "Client completo"],
     dl_install_title: ["So installierst du", "Como instalar", "Come installare"],
-    dl_s1: ["Archiv herunterladen", "Baixe o arquivo", "Scarica l'archivio"],
-    dl_s2: ["Entpacken", "Descompacte", "Estrailo"],
-    dl_s3: ["Ordner System öffnen", "Abra a pasta System", "Apri la cartella System"],
-    dl_s4: ["KuroganeLauncher starten", "Execute o KuroganeLauncher", "Avvia KuroganeLauncher"],
+    dl_s1: ["Client herunterladen", "Baixe o cliente", "Scarica il client"],
+    dl_s2: ["Ordner öffnen", "Abra a pasta", "Apri la cartella"],
+    dl_s3: ["Kurogane anklicken", "Clique em Kurogane", "Clicca su Kurogane"],
+    dl_s4: ["Update abwarten", "Aguarde a atualização", "Attendi l'aggiornamento"],
+    dl_s5: ["Ins Spiel einsteigen", "Entre no jogo", "Entra nel gioco"],
     dl_btn_soon: ["Vollständiger Client – bald", "Cliente completo — em breve", "Client completo — presto"],
     dl_btn_get: ["Vollständigen Client herunterladen", "Baixar o cliente completo", "Scarica il client completo"],
 

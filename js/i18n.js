@@ -34,8 +34,8 @@
     },
     step2_t: { ru: "Запуск", en: "Launch" },
     step2_d: {
-      ru: "Распакуй клиент и запусти его как обычно.",
-      en: "Unpack the client and start it as usual."
+      ru: "Зайди в папку клиента, нажми Kurogane и дождись обновления.",
+      en: "Open the client folder, click Kurogane and let it update."
     },
     step3_t: { ru: "Игра", en: "Play" },
     step3_d: {
@@ -78,10 +78,11 @@
     dl_title: { ru: "Фулл клиент", en: "Full client" },
     dl_btn_soon: { ru: "Фулл клиент — скоро", en: "Full client — soon" },
     dl_install_title: { ru: "Как установить", en: "How to install" },
-    dl_s1: { ru: "Скачай архив", en: "Download the archive" },
-    dl_s2: { ru: "Распакуй его", en: "Unpack it" },
-    dl_s3: { ru: "Открой папку System", en: "Open the System folder" },
-    dl_s4: { ru: "Запусти KuroganeLauncher", en: "Run KuroganeLauncher" },
+    dl_s1: { ru: "Скачай клиент", en: "Download the client" },
+    dl_s2: { ru: "Зайди в папку", en: "Open the folder" },
+    dl_s3: { ru: "Нажми Kurogane", en: "Click Kurogane" },
+    dl_s4: { ru: "Дождись обновления", en: "Let it update" },
+    dl_s5: { ru: "Заходи в игру", en: "Enter the game" },
     dl_btn_get: { ru: "Скачать фулл клиент", en: "Download full client" },
 
     rg_kicker: { ru: "Аккаунт", en: "Account" },
