@@ -27,7 +27,7 @@
     fact_chronicle: "Chronicle",
     fact_chronicle_v: "saf Interlude",
     fact_cap: "Geliştirme sınırı",
-    fact_cap_v: "zırh / takı +15 (%100), silah +17 (%100)",
+    fact_cap_v: "zırh / takı +15, silah +17",
     contacts_title: "Topluluk",
     contacts_lead: "Duyurular, sorular ve hata bildirimleri toplulukta.",
     contact_soon: "yakında",

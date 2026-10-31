@@ -49,7 +49,7 @@
     fact_chronicle: { ru: "Хроника", en: "Chronicle" },
     fact_chronicle_v: { ru: "чистый Interlude", en: "clean Interlude" },
     fact_cap: { ru: "Кап заточки", en: "Enchant cap" },
-    fact_cap_v: { ru: "броня / бижу +15 (100%), оружие +17 (100%)", en: "armor / jewels +15 (100%), weapon +17 (100%)" },
+    fact_cap_v: { ru: "броня / бижу +15, оружие +17", en: "armor / jewels +15, weapon +17" },
 
 
 

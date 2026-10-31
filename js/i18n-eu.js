@@ -50,9 +50,9 @@
     fact_chronicle_v: ["reines Interlude", "Interlude puro", "Interlude puro"],
     fact_cap: ["Verzauberungslimit", "Limite de encantamento", "Limite di incantamento"],
     fact_cap_v: [
-      "Rüstung / Schmuck +15 (100 %), Waffe +17 (100 %)",
-      "armadura / joias +15 (100%), arma +17 (100%)",
-      "armatura / gioielli +15 (100%), arma +17 (100%)"
+      "Rüstung / Schmuck +15, Waffe +17",
+      "armadura / joias +15, arma +17",
+      "armatura / gioielli +15, arma +17"
     ],
 
     contacts_title: ["Community", "Comunidade", "Community"],

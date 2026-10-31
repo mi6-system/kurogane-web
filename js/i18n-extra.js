@@ -66,13 +66,13 @@
     fact_chronicle_v: ["Interlude puro", "Interlude pur", "纯净 Interlude", "純粋な Interlude", "순수 Interlude", "Interlude نقي", "Interlude נקי"],
     fact_cap: ["Límite de encantamiento", "Plafond d'enchantement", "强化上限", "強化上限", "강화 상한", "حد التعزيز", "תקרת חידוד"],
     fact_cap_v: [
-      "armadura / joyas +15 (100 %), arma +17 (100 %)",
-      "armure / bijoux +15 (100 %), arme +17 (100 %)",
-      "防具 / 饰品 +15（100%），武器 +17（100%）",
-      "防具／アクセサリー +15（100%）、武器 +17（100%）",
-      "방어구 / 장신구 +15 (100%), 무기 +17 (100%)",
-      "الدروع / المجوهرات +15 (100%)، الأسلحة +17 (100%)",
-      "שריון / תכשיטים +15 (100%), נשק +17 (100%)"
+      "armadura / joyas +15, arma +17",
+      "armure / bijoux +15, arme +17",
+      "防具 / 饰品 +15，武器 +17",
+      "防具／アクセサリー +15、武器 +17",
+      "방어구 / 장신구 +15, 무기 +17",
+      "الدروع / المجوهرات +15، الأسلحة +17",
+      "שריון / תכשיטים +15, נשק +17"
     ],
 
     contacts_title: ["Comunidad", "Communauté", "社区", "コミュニティ", "커뮤니티", "المجتمع", "קהילה"],
@@ -317,7 +317,9 @@
       var v = T[key][i];
       if (code === "ar" || code === "he") {
         // keep "+15 / +17" in logical order inside right-to-left text
-        v = v.replace(/\+15 \/ \+17/g, "\u2066+15 / +17\u2069").replace(/\+1[57] \(100%\)/g, function (m) { return "\u2066" + m + "\u2069"; });
+        v = key === "fact_cap_v"
+          ? v.replace(/\+1[57]/g, function (m) { return "\u2066" + m + "\u2069"; })
+          : v.replace(/\+15 \/ \+17/g, "\u2066+15 / +17\u2069");
       }
       dict[key][code] = v;
     });

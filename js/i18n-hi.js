@@ -27,7 +27,7 @@
     fact_chronicle: "क्रॉनिकल",
     fact_chronicle_v: "शुद्ध Interlude",
     fact_cap: "एन्चैंट सीमा",
-    fact_cap_v: "आर्मर / ज्वेलरी +15 (100%), हथियार +17 (100%)",
+    fact_cap_v: "आर्मर / ज्वेलरी +15, हथियार +17",
     contacts_title: "कम्युनिटी",
     contacts_lead: "घोषणाएँ, सवाल और बग रिपोर्ट — कम्युनिटी में।",
     contact_soon: "जल्द ही",
